@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage:{
+        'bg-img':"url('/header.jpg')"
+      },
       container: {
         center: true,
         padding: "15px",
