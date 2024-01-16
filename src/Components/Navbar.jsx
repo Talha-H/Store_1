@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import { FaCartShopping } from "react-icons/fa6";
-import { IoMdMenu } from "react-icons/io";
 import Link from "next/link";
+import Menu from "./Menu"
 
 const data = [
   { name: "Home", link: "/" },
@@ -17,18 +17,19 @@ const Navbar = () => {
     <div>
       <div className="navbar bg-base-300 justify-between items-center ">
         <div className="md:hidden btn btn-circle">
-          <IoMdMenu size={24} />
+          <Menu/>
         </div>
         <div className="flex items-center ">
           <a className="btn btn-ghost text-xl">daisyUI</a>
         </div>
+
         <div className="hidden md:flex gap-x-3 items-center ">
           {data.map((item, idx) => {
             return (
               <div key={idx}>
                 <Link
                   href={item.link}
-                  className="text-xl gap-6 font-medium hover:text-red-400 transition ease-in-out duration-150 delay-150"
+                  className="text-xl gap-6 font-medium hover:text-accent transition ease-in-out duration-150 delay-150"
                 >
                   {item.name}
                 </Link>
