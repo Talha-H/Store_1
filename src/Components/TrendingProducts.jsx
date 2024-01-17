@@ -1,6 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import Card from "../Components/Card";
+import { FaArrowCircleLeft } from "react-icons/fa";
+import { FaArrowCircleRight } from "react-icons/fa";
 
 const TrendingProducts = () => {
   const [color, setColor] = useState(null);
@@ -50,6 +52,10 @@ const TrendingProducts = () => {
         <Card />
         <Card />
         <Card />
+      </div>
+      <div className="flex gap-x-4 mt-6 justify-center items-center">
+        <FaArrowCircleLeft size={30} className="btn btn-circle" />
+        <FaArrowCircleRight size={30} className="btn btn-circle" />
       </div>
     </div>
   );
