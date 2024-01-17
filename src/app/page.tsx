@@ -6,6 +6,9 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <div>
+        
+      </div>
     </>
   );
 }
