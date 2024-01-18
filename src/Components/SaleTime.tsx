@@ -9,7 +9,7 @@ const SaleTime = () => {
     <div className="bg-[#f6f6f6] mt-6 mb-6  relative">
       <div className="flex flex-col gap-y-5 justify-center items-center h-[80vh]">
         <div className="flex flex-col gap-y-1 justify-center items-center">
-          <p className="text-red-400 text-lg font-normal fuppercase">
+          <p className="text-red-400 text-lg font-normal uppercase">
             Fashion Collection
           </p>
           <h1 className="text-4xl font-semibold uppercase tracking-wider">

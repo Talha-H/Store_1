@@ -5,6 +5,7 @@ import Char from "@/Components/Char";
 import TrendingProducts from "@/Components/TrendingProducts";
 import Ads from "@/Components/Ads";
 import SaleTime from "@/Components/SaleTime";
+import FashionCollection from "@/Components/FashionCollection";
 
 export default function Home() {
   return (
@@ -15,7 +16,8 @@ export default function Home() {
       <div className="px-20">
         <Ads />
       </div>
-      <SaleTime/>
+      <SaleTime />
+      <FashionCollection />
     </>
   );
 }
