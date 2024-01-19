@@ -6,6 +6,7 @@ import TrendingProducts from "@/Components/TrendingProducts";
 import Ads from "@/Components/Ads";
 import SaleTime from "@/Components/SaleTime";
 import FashionCollection from "@/Components/FashionCollection";
+import Footer from "@/Components/Footer";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       </div>
       <SaleTime />
       <FashionCollection />
+      <Footer/>
     </>
   );
 }
