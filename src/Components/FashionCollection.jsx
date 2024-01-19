@@ -35,7 +35,7 @@ const data = [
 
 const FashionCollection = () => {
   return (
-    <div className="h-[90vh] flex flex-col justify-center items-center gap-y-4">
+    <div className="lg:h-[90vh] flex flex-col justify-center items-center gap-y-4 mb-6">
       <div className="flex flex-col justify-center items-center gap-y-1 ">
         <span className="text-red-400 text-lg font-normal uppercase">
           Fashion Collection
@@ -47,14 +47,14 @@ const FashionCollection = () => {
           Newest Trends From Top Brands
         </span>
       </div>
-      <div className="flex justify-center">
+      <div className="flex flex-col md:flex-row flex-wrap justify-center gap-y-3">
         {data.map((item, idx) => {
           return (
             <div
               key={idx}
-              className=" flex flex-col justify-center items-center  "
+              className=" flex flex-col justify-center items-center "
             >
-              <div className="flex mx-4">
+              <div className="flex aspect-square mx-4">
                 <Image
                   src={item.img}
                   alt=""

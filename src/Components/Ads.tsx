@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 const Ads = () => {
   return (
-    <div className="flex justify-center items-center gap-x-3   overflow-hidden my-6">
+    <div className="hidden lg:flex gap-y-3 justify-center items-center gap-x-3   overflow-hidden my-6">
       <div className="w-72 h-80">
         <Image
           src={"/wo-1.jpg"}
