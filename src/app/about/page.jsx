@@ -44,23 +44,24 @@ const About = () => {
           className="w-[300px] h-[200px] object-cover"
         />
       </div>
+      {/* All Member */}
       <div className="flex flex-col gap-y-7 mt-14 items-center mx-4 px-4 lg:mx-14 lg:px-28 gap-x-11">
         <h1 className="text-3xl font-semibold capitalize tracking-wider">
           All Members
         </h1>
-        <div className="flex justify-center items-center gap-x-5">
+        <div className="flex flex-col md:flex-row flex-wrap  justify-center items-center gap-x-5 gap-y-3">
           {data.map((item, idx) => {
             return (
               <div
                 key={idx}
-                className="flex flex-col justify-center items-center "
+                className="flex flex-col justify-center items-center border rounded-b-2xl  shadow-md cursor-pointer hover:shadow-2xl transition ease-in-out duration-150 delay-150 "
               >
                 <Image
                   src={item.img}
                   alt="img"
                   width={800}
                   height={1000}
-                  className="w-[250px] h-[300px]"
+                  className="w-[220px] h-[270px]"
                 />
                 <div className="flex flex-col gap-y-1 mt-2 mb-3">
                   <h1 className="text-2xl font-semibold">{item.name}</h1>
