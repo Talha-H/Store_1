@@ -1,5 +1,10 @@
 import Image from "next/image";
 import React from "react";
+
+import { MdProductionQuantityLimits } from "react-icons/md";
+import { ImHappy } from "react-icons/im";
+import { CiCoffeeCup } from "react-icons/ci";
+
 import {
   FaFacebook,
   FaInstagram,
@@ -110,6 +115,26 @@ const About = () => {
           height={300}
           className="w-[300px] h-[200px] object-cover"
         />
+      </div>
+
+      {/* Client */}
+
+      <div className="flex flex-wrap justify-center gap-y-8 md:flex-row mt-14 items-center mx-4 px-4 lg:mx-16 lg:px-32  gap-x-24 mb-14">
+        <div className="flex flex-col items-center justify-center">
+          <MdProductionQuantityLimits size={28} />
+          <h1 className="text-xl font-medium">Products</h1>
+          <p className="text-4xl font-medium">30+</p>
+        </div>
+        <div className="flex flex-col items-center justify-center">
+          <ImHappy size={28} />
+          <h1 className="text-xl font-medium">Client Happy</h1>
+          <p className="text-4xl font-medium">200+</p>
+        </div>
+        <div className="flex flex-col items-center justify-center">
+          <CiCoffeeCup size={28} />
+          <h1 className="text-xl font-medium">Cup of Coffee</h1>
+          <p className="text-4xl font-medium">50+</p>
+        </div>
       </div>
     </div>
   );
