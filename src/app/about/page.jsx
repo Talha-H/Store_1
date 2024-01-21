@@ -90,6 +90,27 @@ const About = () => {
           })}
         </div>
       </div>
+      {/* Join Now */}
+      <div className="flex flex-col gap-y-8 md:flex-row mt-14 items-center mx-4 px-4 lg:mx-14 lg:px-28 gap-x-11">
+        <div className="flex flex-col items-start gap-y-2 ">
+          <h1 className="text-3xl font-semibold capitalize tracking-wider">
+            Do you want to be a part of our team ?
+          </h1>
+          <p className="text-base font-normal tracking-wide  ">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Perspiciatis amet blanditiis velit illo tempore quasi adipisci culpa
+            voluptas quaerat id?
+          </p>
+          <button className="btn bg-accent ">Join Now</button>
+        </div>
+        <Image
+          src={"/Smile.jpg"}
+          alt="img"
+          width={300}
+          height={300}
+          className="w-[300px] h-[200px] object-cover"
+        />
+      </div>
     </div>
   );
 };
