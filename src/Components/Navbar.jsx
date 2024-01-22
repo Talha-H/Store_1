@@ -2,14 +2,14 @@ import Image from "next/image";
 import React from "react";
 import { FaCartShopping } from "react-icons/fa6";
 import Link from "next/link";
-import Menu from "./Menu"
+import Menu from "./Menu";
 
 const data = [
   { name: "Home", link: "/" },
   { name: "About", link: "/about" },
   { name: "Fashion", link: "/fashion" },
-  { name: "Collection", link: "/collection" },
   { name: "Accessories", link: "/accessories" },
+  { name: "Blog", link: "/blog" },
 ];
 
 const Navbar = () => {
@@ -17,7 +17,7 @@ const Navbar = () => {
     <div>
       <div className="navbar bg-base-300 justify-between items-center ">
         <div className="md:hidden btn btn-circle">
-          <Menu/>
+          <Menu />
         </div>
         <div className="flex items-center ">
           <a className="btn btn-ghost text-xl">daisyUI</a>
