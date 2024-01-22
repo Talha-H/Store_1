@@ -49,6 +49,48 @@ const About = () => {
           className="w-[300px] h-[200px] object-cover"
         />
       </div>
+
+      {/* Join Now */}
+      <div className="flex flex-col gap-y-8 md:flex-row mt-14 items-center mx-4 px-4 lg:mx-14 lg:px-28 gap-x-11">
+        <div className="flex flex-col items-start gap-y-2 ">
+          <h1 className="text-3xl font-semibold capitalize tracking-wider">
+            Do you want to be a part of our team ?
+          </h1>
+          <p className="text-base font-normal tracking-wide  ">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Perspiciatis amet blanditiis velit illo tempore quasi adipisci culpa
+            voluptas quaerat id?
+          </p>
+          <button className="btn bg-accent ">Join Now</button>
+        </div>
+        <Image
+          src={"/Smile.jpg"}
+          alt="img"
+          width={300}
+          height={300}
+          className="w-[300px] h-[200px] object-cover"
+        />
+      </div>
+
+      {/* Client */}
+
+      <div className="flex flex-wrap justify-center gap-y-8 md:flex-row mt-14 items-center mx-4 px-4 lg:mx-16 lg:px-32  gap-x-24 mb-14">
+        <div className="flex flex-col items-center justify-center">
+          <MdProductionQuantityLimits size={28} />
+          <h1 className="text-xl font-medium">Products</h1>
+          <p className="text-4xl font-medium">30+</p>
+        </div>
+        <div className="flex flex-col items-center justify-center">
+          <ImHappy size={28} />
+          <h1 className="text-xl font-medium">Client Happy</h1>
+          <p className="text-4xl font-medium">200+</p>
+        </div>
+        <div className="flex flex-col items-center justify-center">
+          <CiCoffeeCup size={28} />
+          <h1 className="text-xl font-medium">Cup of Coffee</h1>
+          <p className="text-4xl font-medium">50+</p>
+        </div>
+      </div>
       {/* All Member */}
       <div className="flex flex-col gap-y-7 mt-14 items-center mx-4 px-4 lg:mx-14 lg:px-28 gap-x-11">
         <h1 className="text-3xl font-semibold capitalize tracking-wider">
@@ -95,45 +137,49 @@ const About = () => {
           })}
         </div>
       </div>
-      {/* Join Now */}
-      <div className="flex flex-col gap-y-8 md:flex-row mt-14 items-center mx-4 px-4 lg:mx-14 lg:px-28 gap-x-11">
-        <div className="flex flex-col items-start gap-y-2 ">
-          <h1 className="text-3xl font-semibold capitalize tracking-wider">
-            Do you want to be a part of our team ?
-          </h1>
-          <p className="text-base font-normal tracking-wide  ">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Perspiciatis amet blanditiis velit illo tempore quasi adipisci culpa
-            voluptas quaerat id?
-          </p>
-          <button className="btn bg-accent ">Join Now</button>
-        </div>
-        <Image
-          src={"/Smile.jpg"}
-          alt="img"
-          width={300}
-          height={300}
-          className="w-[300px] h-[200px] object-cover"
-        />
-      </div>
 
-      {/* Client */}
+      {/* All Clients */}
 
-      <div className="flex flex-wrap justify-center gap-y-8 md:flex-row mt-14 items-center mx-4 px-4 lg:mx-16 lg:px-32  gap-x-24 mb-14">
-        <div className="flex flex-col items-center justify-center">
-          <MdProductionQuantityLimits size={28} />
-          <h1 className="text-xl font-medium">Products</h1>
-          <p className="text-4xl font-medium">30+</p>
-        </div>
-        <div className="flex flex-col items-center justify-center">
-          <ImHappy size={28} />
-          <h1 className="text-xl font-medium">Client Happy</h1>
-          <p className="text-4xl font-medium">200+</p>
-        </div>
-        <div className="flex flex-col items-center justify-center">
-          <CiCoffeeCup size={28} />
-          <h1 className="text-xl font-medium">Cup of Coffee</h1>
-          <p className="text-4xl font-medium">50+</p>
+      <div className="flex flex-col  justify-center gap-y-7 mt-14 items-center mx-4 px-4 lg:mx-14 lg:px-28 gap-x-11 mb-14">
+        <h1 className="text-4xl font-semibold capitalize tracking-wider">
+          All Clients
+        </h1>
+        <div className="flex justify-center items-center flex-wrap gap-x-6 gap-y-3">
+          <Image
+            src={"/nike.png"}
+            alt="img-icon"
+            width={3000}
+            height={300}
+            className="w-[130px] h-[100px] object-contain"
+          />
+          <Image
+            src={"/code.png"}
+            alt="img-icon"
+            width={3000}
+            height={300}
+            className="w-[130px] h-[100px] object-contain"
+          />
+          <Image
+            src={"/mapbox.png"}
+            alt="img-icon"
+            width={3000}
+            height={300}
+            className="w-[130px] h-[100px] object-contain"
+          />
+          <Image
+            src={"/adidas.png"}
+            alt="img-icon"
+            width={3000}
+            height={300}
+            className="w-[130px] h-[100px] object-contain"
+          />
+          <Image
+            src={"/levis.jpg"}
+            alt="img-icon"
+            width={3000}
+            height={300}
+            className="w-[130px] h-[100px] object-contain"
+          />
         </div>
       </div>
     </div>
