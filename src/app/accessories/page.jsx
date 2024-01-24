@@ -4,19 +4,6 @@ import AccessProducts from "@/Components/AccessProducts";
 import { fetchData } from "@/api/api";
 import { useState, useEffect } from "react";
 
-// const data = [
-//   { name: "Urban Explorer Backpack", price: "110$", sale: "80$", img: "" },
-//   { name: "Classic Leather Watch", price: "110$", sale: "80$", img: "" },
-//   { name: "Vintage Aviator Sunglasses", price: "110$", sale: "80$", img: "" },
-//   { name: "Elegant Silk Scarf", price: "110$", sale: "80$", img: "" },
-//   { name: "Boho Beaded Anklet ", price: "110$", sale: "80$", img: "" },
-//   { name: "Tech-Friendly Laptop Sleeve", price: "110$", sale: "80$", img: "" },
-//   { name: "Cozy Knit Beanie", price: "110$", sale: "80$", img: "" },
-//   { name: "Urban Explorer Backpack", price: "110$", sale: "80$", img: "" },
-//   { name: "Urban Explorer Backpack", price: "110$", sale: "80$", img: "" },
-//   { name: "Urban Explorer Backpack", price: "110$", sale: "80$", img: "" },
-// ];
-
 const Accessories = () => {
   const [data, setData] = useState([]);
 
