@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
-const SingleBlog = ({params}) => {
-  return (
-    <div>SingleBlog</div>
-  )
-}
+const SingleBlog = () => {
+  return <div>SingleBlog</div>;
+};
 
-export default SingleBlog
+export default SingleBlog;
