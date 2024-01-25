@@ -3,12 +3,12 @@ import Link from "next/link";
 import Image from "next/image";
 
 const blogNames = [
-  { name: "Shopper's Spotlight", img: "/1.jpg", time: "5 min" },
-  { name: "Fashion Finds Journal", img: "/7.jpg", time: "4 min" },
-  { name: "Style Secrets Chronicle", img: "/3.jpg", time: "3 min" },
-  { name: "Beauty Buzz Blog", img: "/4.jpg", time: "2 min" },
-  { name: "Home Decor Hub", img: "/5.jpg", time: "7 min" },
-  { name: "Wellness Wonders Gazette", img: "/6.jpg", time: "6 min" },
+  { id: "0", name: "Shopper's Spotlight", img: "/1.jpg", time: "5 min" },
+  { id: "1", name: "Fashion Finds Journal", img: "/7.jpg", time: "4 min" },
+  { id: "2", name: "Style Secrets Chronicle", img: "/3.jpg", time: "3 min" },
+  { id: "3", name: "Beauty Buzz Blog", img: "/4.jpg", time: "2 min" },
+  { id: "4", name: "Home Decor Hub", img: "/5.jpg", time: "7 min" },
+  { id: "5", name: "Wellness Wonders Gazette", img: "/6.jpg", time: "6 min" },
   // { name: "Tech Talk Tribune" },
   // { name: "Culinary Corner Chronicles" },
   // { name: "Fitness Focus Forum" },
@@ -28,7 +28,7 @@ const Blog = () => {
         </h1>
       </div>
       <section className="flex  px-6 py-8 mx-auto ">
-        <div className="flex flex-[1.5] ">
+        <div className="flex flex-[1.5] mt-16">
           <Image
             src={"/wo-4.jpg"}
             alt="img"
@@ -41,10 +41,14 @@ const Blog = () => {
           <span className="text-4xl font-semibold tracking-wider">
             Trending Posts
           </span>
-          <div className=" flex flex-col gap-x-2 justify-center gap-y-3 ">
+          <div className=" flex flex-col gap-x-2 justify-center  ">
             {blogNames.map((item, id) => {
               return (
-                <Link href={`/?cat${id}`} key={id} className="flex gap-x-2    ">
+                <Link
+                  href={`/blog/${id}`}
+                  key={id}
+                  className="flex gap-x-2    "
+                >
                   <div className="w-[100px] h-[100px] flex justify-center items-center">
                     <Image
                       src={item.img}
