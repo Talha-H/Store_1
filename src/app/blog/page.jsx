@@ -1,9 +1,10 @@
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 
 const blogNames = [
   { name: "Shopper's Spotlight", img: "/1.jpg", time: "5 min" },
-  { name: "Fashion Finds Journal", img: "/2.jpg", time: "4 min" },
+  { name: "Fashion Finds Journal", img: "/7.jpg", time: "4 min" },
   { name: "Style Secrets Chronicle", img: "/3.jpg", time: "3 min" },
   { name: "Beauty Buzz Blog", img: "/4.jpg", time: "2 min" },
   { name: "Home Decor Hub", img: "/5.jpg", time: "7 min" },
@@ -26,39 +27,40 @@ const Blog = () => {
           Blogs
         </h1>
       </div>
-      <section className="flex  px-6 py-8 mx-auto">
-        <div className="flex flex-[1.5] justify-center items-center">
+      <section className="flex  px-6 py-8 mx-auto ">
+        <div className="flex flex-[1.5] ">
           <Image
             src={"/wo-4.jpg"}
             alt="img"
             width={600}
             height={700}
-            className="w-[90%] h-[400px] object-contain"
+            className="w-[90%] h-[400px] object-contain "
           />
         </div>
         <div className="flex flex-1 flex-col gap-y-2">
-          <span>Trending Posts</span>
-          <div className=" flex flex-col gap-x-2 gap-y-2">
-            {blogNames.map((item, idx) => {
+          <span className="text-4xl font-semibold tracking-wider">
+            Trending Posts
+          </span>
+          <div className=" flex flex-col gap-x-2 justify-center gap-y-3 ">
+            {blogNames.map((item, id) => {
               return (
-                <div
-                  key={idx}
-                  className="flex gap-x-2 items-start  "
-                >
-                  <div className="w-[50px] h-[50px]">
+                <Link href={`/?cat${id}`} key={id} className="flex gap-x-2    ">
+                  <div className="w-[100px] h-[100px] flex justify-center items-center">
                     <Image
                       src={item.img}
                       alt="img"
-                      width={100}
-                      height={100}
-                      className="w-[50px] h-[50px] object-contain"
+                      width={200}
+                      height={200}
+                      className="w-[100%] h-[100px] object-contain"
                     />
                   </div>
-                  <div className="flex flex-col items-start">
-                    <span>{item.name}</span>
-                    <p>{item.time}</p>
+                  <div className="flex flex-col justify-center">
+                    <span className="text-xl font-medium capitalize">
+                      {item.name}
+                    </span>
+                    <p className="text-lg font-normal lowercase">{item.time}</p>
                   </div>
-                </div>
+                </Link>
               );
             })}
           </div>
