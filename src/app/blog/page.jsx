@@ -9,14 +9,6 @@ const blogNames = [
   { id: "3", name: "Beauty Buzz Blog", img: "/4.jpg", time: "2 min" },
   { id: "4", name: "Home Decor Hub", img: "/5.jpg", time: "7 min" },
   { id: "5", name: "Wellness Wonders Gazette", img: "/6.jpg", time: "6 min" },
-  // { name: "Tech Talk Tribune" },
-  // { name: "Culinary Corner Chronicles" },
-  // { name: "Fitness Focus Forum" },
-  // { name: "Travel Tales Tribune" },
-  // { name: "DIY Delights Digest" },
-  // { name: "Pet Paradise Post" },
-  // { name: "Bookworm's Blogosphere" },
-  // { name: "Green Living Guide" },
 ];
 
 const Blog = () => {
