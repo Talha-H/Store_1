@@ -3,12 +3,12 @@ import Link from "next/link";
 import Image from "next/image";
 
 const blogNames = [
-  { id: "0", name: "Shopper's Spotlight", img: "/1.jpg", time: "5 min" },
-  { id: "1", name: "Fashion Finds Journal", img: "/7.jpg", time: "4 min" },
-  { id: "2", name: "Style Secrets Chronicle", img: "/3.jpg", time: "3 min" },
-  { id: "3", name: "Beauty Buzz Blog", img: "/4.jpg", time: "2 min" },
-  { id: "4", name: "Home Decor Hub", img: "/5.jpg", time: "7 min" },
-  { id: "5", name: "Wellness Wonders Gazette", img: "/6.jpg", time: "6 min" },
+  { id: "1", name: "Shopper's Spotlight", img: "/1.jpg", time: "5 min" },
+  { id: "2", name: "Fashion Finds Journal", img: "/7.jpg", time: "4 min" },
+  { id: "3", name: "Style Secrets Chronicle", img: "/3.jpg", time: "3 min" },
+  { id: "4", name: "Beauty Buzz Blog", img: "/4.jpg", time: "2 min" },
+  { id: "5", name: "Home Decor Hub", img: "/5.jpg", time: "7 min" },
+  { id: "6", name: "Wellness Wonders Gazette", img: "/6.jpg", time: "6 min" },
 ];
 
 const Blog = () => {
@@ -19,8 +19,8 @@ const Blog = () => {
           Blogs
         </h1>
       </div>
-      <section className="flex  px-6 py-8 mx-auto ">
-        <div className="flex flex-[1.5] mt-16">
+      <section className="flex flex-col md:flex-row flex-wrap  px-6 py-8 mx-auto ">
+        <Link href={`/blog`} className="flex flex-[1.5] mt-16">
           <Image
             src={"/wo-4.jpg"}
             alt="img"
@@ -28,7 +28,7 @@ const Blog = () => {
             height={700}
             className="w-[90%] h-[400px] object-contain "
           />
-        </div>
+        </Link>
         <div className="flex flex-1 flex-col gap-y-2">
           <span className="text-4xl font-semibold tracking-wider">
             Trending Posts
