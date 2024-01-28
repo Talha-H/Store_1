@@ -19,6 +19,11 @@ const data = [
   { name: "Talha H", place: "Web Developer", img: "/talha.JPG" },
 ];
 
+export const metadata = {
+  title: "About Page",
+  description:
+    "A Fashion Store Where you find every accessories related fashion & beauty",
+};
 const About = () => {
   return (
     <div>

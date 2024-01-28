@@ -46,6 +46,12 @@ const data = [
   },
 ];
 
+export const metadata = {
+  title: "Fashion Page",
+  description:
+    "A Fashion Store Where you find every accessories related fashion & beauty",
+};
+
 const Fashion = ({ id }) => {
   return (
     <div>

@@ -4,6 +4,8 @@ import AccessProducts from "@/Components/AccessProducts";
 import { fetchData } from "@/api/api";
 import { useState, useEffect } from "react";
 
+
+
 const Accessories = () => {
   const [data, setData] = useState([]);
 

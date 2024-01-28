@@ -11,6 +11,12 @@ const blogNames = [
   { id: "6", name: "Wellness Wonders Gazette", img: "/6.jpg", time: "6 min" },
 ];
 
+export const metadata = {
+  title: "Blogs page",
+  description:
+    "A Fashion Store Where you find every accessories related fashion & beauty",
+};
+
 const Blog = () => {
   return (
     <div>
