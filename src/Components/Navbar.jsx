@@ -14,8 +14,8 @@ const data = [
 
 const Navbar = () => {
   return (
-    <div className="lg:relative z-50">
-      <div className="navbar bg-base-300 justify-between items-center lg:fixed ">
+    <div className=" z-50 ">
+      <div className="navbar bg-base-300 justify-between items-center ">
         <div className="md:hidden btn btn-circle">
           <Menu />
         </div>

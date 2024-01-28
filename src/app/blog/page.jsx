@@ -14,7 +14,7 @@ const blogNames = [
 const Blog = () => {
   return (
     <div>
-      <div className="h-[30vh] bg-base-300  ">
+      <div className="h-[30vh] bg-base-300 ">
         <h1 className="flex justify-center  items-center uppercase text-5xl font-bold pt-14">
           Blogs
         </h1>
