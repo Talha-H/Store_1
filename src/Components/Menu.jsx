@@ -7,8 +7,8 @@ const data = [
   { name: "Home", link: "/" },
   { name: "About", link: "/about" },
   { name: "Fashion", link: "/fashion" },
-  { name: "Collection", link: "/collection" },
   { name: "Accessories", link: "/accessories" },
+  { name: "Blog", link: "/blog" },
 ];
 
 const Menu = () => {
