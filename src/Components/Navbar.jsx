@@ -38,7 +38,7 @@ const Navbar = () => {
           })}
         </div>
         <div className="flex-none gap-x-2">
-          <div onClick={toggleMenu} className="dropdown dropdown-end">
+          <div className="dropdown dropdown-end">
             <div
               tabIndex={0}
               role="button"
