@@ -20,7 +20,7 @@ const Navbar = () => {
           <Menu />
         </div>
         <div className="flex items-center ">
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <a className="btn btn-ghost text-xl">JazZyStore</a>
         </div>
 
         <div className="hidden md:flex gap-x-3 items-center ">
