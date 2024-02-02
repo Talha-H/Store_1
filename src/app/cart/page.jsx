@@ -5,7 +5,7 @@ import Image from "next/image";
 const CartPage = () => {
   return (
     <div className="md:py-20 w-full max-w-[1280px] px-5 md:px-10 mx-auto">
-      <div className="title text-[30px] max-w-[800px] mx-auto font-bold text-center md:text-[40px] leading-tight">
+      <div className="title text-[30px] max-w-[800px] mx-auto font-bold text-center md:text-[40px] leading-tight mt-4">
         Shopping cart
       </div>
       <div className="flex flex-col flex-[2] items-center justify-center pb-[50px] md:mt-14">
