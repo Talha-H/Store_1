@@ -15,7 +15,7 @@ const TrendingProducts = () => {
       <h1 className="text-center text-4xl font-bold fill-success-content">
         Trending Products
       </h1>
-      <div className="flex justify-center items-center my-4   gap-x-4">
+      <div className="flex flex-wrap justify-center items-center my-4   gap-x-4">
         <button
           onClick={() => changeColor(1)}
           className={`${

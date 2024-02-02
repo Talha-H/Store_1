@@ -7,7 +7,7 @@ import { FaStar } from "react-icons/fa";
 const Card = () => {
   return (
     <div className="flex flex-col justify-center items-center">
-      <div className=" border rounded-b-2xl w-max shadow-xl cursor-pointer hover:shadow-2xl transition ease-in-out duration-150 delay-150">
+      <div className=" border rounded-b-2xl w-max shadow-xl cursor-pointer hover:shadow-2xl transition ease-in-out duration-150 delay-150 ">
         <div className="flex  flex-col w-60 h-60 ">
           <Link href={"/"}>
             <Image
