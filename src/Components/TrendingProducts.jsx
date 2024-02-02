@@ -47,7 +47,7 @@ const TrendingProducts = () => {
           New Arrivals
         </button>
       </div>
-      <div className="flex flex-wrap flex-col md:flex-row gap-y-3 gap-x-3 justify-center items-center">
+      <div className="flex flex-wrap  md:flex-row gap-y-3  justify-center items-center gap-x-3 px-1">
         <Card />
         <Card />
         <Card />
