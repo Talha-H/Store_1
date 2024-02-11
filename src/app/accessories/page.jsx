@@ -1,10 +1,16 @@
 "use client";
 import React from "react";
 import AccessProducts from "@/Components/AccessProducts";
-import { fetchData } from "@/api/api";
 import { useState, useEffect } from "react";
 
-
+const fetchData = async () => {
+  const res = await fetch(process.env.API_URL_ALL);
+  if (!res.ok) {
+    throw new Error(`HTTP-Error: ${res.status}`);
+  }
+  const data = await res.json();
+  return data;
+};
 
 const Accessories = () => {
   const [data, setData] = useState([]);
@@ -31,6 +37,7 @@ const Accessories = () => {
     }
     return title;
   };
+
   return (
     <div>
       <div className="h-[30vh] bg-base-300  ">
