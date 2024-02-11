@@ -5,16 +5,16 @@ import { CiStar } from "react-icons/ci";
 
 // const url = `https://fakestoreapi.com/products/`;
 
-const singleFetch = async (id) => {
+const singleFetch = async (id ) => {
   const res = await fetch(`${process.env.API_URL_SINGLE}${id}`);
   if (!res.ok) {
-    throw new Error("Single Fetch Failed");
+    throw new Error(`Single Fetch Failed`);
   }
   const data = await res.json();
   return data;
 };
 
-const getSingleProduct = async ({ params }) => {
+const getSingleProduct = async (params) => {
   const data = await singleFetch(params.id);
 
   return (
