@@ -3,8 +3,10 @@ import React from "react";
 import AccessProducts from "@/Components/AccessProducts";
 import { useState, useEffect } from "react";
 
+const link = "https://fakestoreapi.com/products";
+
 const fetchData = async () => {
-  const res = await fetch(`https://fakestoreapi.com/products`);
+  const res = await fetch(link);
   if (!res.ok) {
     throw new Error(`HTTP-Error: ${res.status}`);
   }
