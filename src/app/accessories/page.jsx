@@ -4,7 +4,7 @@ import AccessProducts from "@/Components/AccessProducts";
 import { useState, useEffect } from "react";
 
 const fetchData = async () => {
-  const res = await fetch(process.env.API_URL_ALL);
+  const res = await fetch(`https://fakestoreapi.com/products`);
   if (!res.ok) {
     throw new Error(`HTTP-Error: ${res.status}`);
   }
