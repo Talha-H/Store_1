@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function RegisterPage() {
   const router = useRouter();
@@ -11,12 +12,12 @@ export default function RegisterPage() {
   });
   const registerUser = async (e) => {
     e.preventDefault();
-    const response = await fetch('/api/register', {
-      method: 'POST',
+    const response = await fetch("/api/register", {
+      method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({data}),
+      body: JSON.stringify({ data }),
     });
 
     const userInfo = await response.json();
@@ -120,13 +121,13 @@ export default function RegisterPage() {
           </form>
 
           <p className="mt-10 text-center text-sm text-gray-500">
-            Not a member?{" "}
-            <a
-              href="#"
+            Already have an account?{" "}
+            <Link
+              href={"/login"}
               className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
             >
-              Start a 14 day free trial
-            </a>
+              LogIn
+            </Link>
           </p>
         </div>
       </div>

@@ -1,8 +1,11 @@
+// "use client";
 import Image from "next/image";
 import React from "react";
 import { FaCartShopping } from "react-icons/fa6";
 import Link from "next/link";
 import Menu from "./Menu";
+import { LuLogIn } from "react-icons/lu";
+// import { useSession } from "next-auth/react";
 
 const data = [
   { name: "Home", link: "/" },
@@ -13,6 +16,7 @@ const data = [
 ];
 
 const Navbar = () => {
+  // const { data: session, status } = useSession();
   return (
     <div className=" z-50 ">
       <div className="navbar bg-base-300 justify-between items-center ">
@@ -66,7 +70,8 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          <div className="dropdown dropdown-end">
+
+          {/* <div className="dropdown dropdown-end">
             <div
               tabIndex={0}
               role="button"
@@ -93,35 +98,10 @@ const Navbar = () => {
                 <Link href={"/register"}>Register</Link>
               </li>
             </ul>
-          </div>
-          {/* <div className="dropdown dropdown-end">
-            <div
-              tabIndex={0}
-              role="button"
-              className="btn btn-ghost btn-circle avatar"
-            >
-              <div className="w-10 rounded-full">
-                <Image src={"/fiv.png"} alt="" width={200} height={200} />
-              </div>
-            </div>
-            <ul
-              tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-            >
-              <li>
-                <a className="justify-between">
-                  Profile
-                  <span className="badge">New</span>
-                </a>
-              </li>
-              <li>
-                <a>Settings</a>
-              </li>
-              <li>
-                <a>Logout</a>
-              </li>
-            </ul>
           </div> */}
+          <Link href={"/login"} className="btn btn-ghost btn-circle">
+            <LuLogIn size={24}/>
+          </Link>
         </div>
       </div>
     </div>
