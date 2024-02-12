@@ -8,8 +8,8 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage:{
-        'bg-img':"url('/header.jpg')"
+      backgroundImage: {
+        "bg-img": "url('/header.jpg')",
       },
       container: {
         center: true,
