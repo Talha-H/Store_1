@@ -10,14 +10,12 @@ import SaleTime from "@/Components/SaleTime";
 import FashionCollection from "@/Components/FashionCollection";
 
 export default function Home() {
-  const { data: session, status } = useSession();
   const router = useRouter();
-  console.log(session);
-
+  const { status } = useSession();
   if (status === "loading") {
-    return <>....loading</>;
+    return <>...loading</>;
   }
-  if (!session) {
+  if (status === "unauthenticated") {
     router.push("/login");
   }
   return (

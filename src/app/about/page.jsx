@@ -1,3 +1,6 @@
+"use client";
+import { useRouter } from "next/navigation";
+import { useSession } from "next-auth/react";
 import Image from "next/image";
 import React from "react";
 
@@ -20,6 +23,15 @@ const data = [
 ];
 
 const About = () => {
+  const router = useRouter();
+  const { data: session, status } = useSession();
+  if (status === "loading") {
+    return <>...loading</>;
+  }
+  if (status === "unauthenticated") {
+    router.push("/login");
+  }
+
   return (
     <div>
       <div className="h-[30vh] bg-base-300  ">

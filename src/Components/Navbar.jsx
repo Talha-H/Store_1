@@ -1,9 +1,12 @@
-import Image from "next/image";
+"use client";
 import React from "react";
 import { FaCartShopping } from "react-icons/fa6";
 import Link from "next/link";
 import Menu from "./Menu";
-import { LuLogIn } from "react-icons/lu";
+// import { LuLogIn } from "react-icons/lu";
+import { LuLogOut } from "react-icons/lu";
+import { signOut } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
 const data = [
   { name: "Home", link: "/" },
@@ -14,6 +17,13 @@ const data = [
 ];
 
 const Navbar = () => {
+  const router = useRouter();
+
+  const logOut = () => {
+    alert("Are you Sure You Want to LogOut?");
+    signOut();
+    router.push("/login");
+  };
   return (
     <div className=" z-50 ">
       <div className="navbar bg-base-300 justify-between items-center ">
@@ -96,9 +106,10 @@ const Navbar = () => {
               </li>
             </ul>
           </div> */}
-          <Link href={"/login"} className="btn btn-ghost btn-circle">
-            <LuLogIn size={24} />
-          </Link>
+
+          <button onClick={logOut} className="btn btn-ghost btn-circle">
+            <LuLogOut size={24} />
+          </button>
         </div>
       </div>
     </div>
