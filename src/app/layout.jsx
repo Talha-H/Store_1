@@ -1,32 +1,28 @@
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/Components/Navbar";
 import Footer from "@/Components/Footer";
-import { AuthProvider } from "./Provider";
+import Provider from "@/context/Provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
+
+export const Metadata = {
   title: "Online Shopping",
   description:
     "A Fashion Store Where you find every accessories related fashion & beauty",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <AuthProvider>
+      <Provider>
+        <body className={inter.className}>
           <Navbar />
           {children}
           <Footer />
-        </AuthProvider>
-      </body>
+        </body>
+      </Provider>
     </html>
   );
 }

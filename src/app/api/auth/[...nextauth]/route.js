@@ -11,13 +11,13 @@ export const authOPtion = {
     CredentialsProvider({
       name: "credentials",
       credentials: {
-        username: { label: "name", type: "text", placeholder: "Talha" },
-        password: { label: "password", type: "password" },
-        email: { label: "email", type: "email" },
+        username: { label: "Username", type: "text", placeholder: "Talha" },
+        password: { label: "Password", type: "password" },
+        email: { label: "Email", type: "email" },
       },
-      authorize: async (credentials) => {
-        if (!credentials.username || !credentials.password) {
-          throw new Error("Username and Password are required");
+      async authorize(credentials) {
+        if (!credentials.email || !credentials.password) {
+          return null;
         }
         const user = await prisma.user.findUnique({
           where: {

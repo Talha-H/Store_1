@@ -1,11 +1,9 @@
-// "use client";
 import Image from "next/image";
 import React from "react";
 import { FaCartShopping } from "react-icons/fa6";
 import Link from "next/link";
 import Menu from "./Menu";
 import { LuLogIn } from "react-icons/lu";
-// import { useSession } from "next-auth/react";
 
 const data = [
   { name: "Home", link: "/" },
@@ -16,7 +14,6 @@ const data = [
 ];
 
 const Navbar = () => {
-  // const { data: session, status } = useSession();
   return (
     <div className=" z-50 ">
       <div className="navbar bg-base-300 justify-between items-center ">
@@ -100,7 +97,7 @@ const Navbar = () => {
             </ul>
           </div> */}
           <Link href={"/login"} className="btn btn-ghost btn-circle">
-            <LuLogIn size={24}/>
+            <LuLogIn size={24} />
           </Link>
         </div>
       </div>
